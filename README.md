@@ -1,3 +1,11 @@
+# Docker image fork
+```bash
+docker run -p 3000:3000 whynotjava/domaincheckapi-docker
+```
+**This is a fork** check out the [orignal project](https://github.com/orthdron/domaincheckapi)
+
+openAPI spec at `/openapi.json`
+
 # Domain Check API
 
 A simple REST API to check domain name availability using WHOIS and DNS lookups.
