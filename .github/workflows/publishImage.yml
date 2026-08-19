@@ -12,8 +12,10 @@ jobs:
       - name: Login to docker
         run: echo ${{ secrets.DOCKER_API_KEY }} | docker login -u whynotjava --password-stdin
 
+      - name: Get Code
+        uses: actions/checkout@v7
+
       - name: Build image
-        uses: actions/checkout@v4
         run: docker build -t whynotjava/domaincheckapi-docker .
 
       - name: Push to docker hub
